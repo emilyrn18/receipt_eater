@@ -25,7 +25,7 @@ while True:
         print("Escape hit, closing the app")
         break
     elif k%256 == 32:  #If space is name and store the image captured
-        image_name = "receipt_image{}.jpg".format(image_count)
+        image_name = "image_receipt.jpg"
         cv2.imwrite(image_name, frame)
         print("Image captured")
         image_count += 1
