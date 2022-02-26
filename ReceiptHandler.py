@@ -17,8 +17,11 @@ api_key = "3b8311ffb7811a5dbdeafc13649fc42c"
 
 client = veryfi.Client(client_id, client_secret, username, api_key)
 categories = ["Travel", "Lodging", "Job Supplies and Materials", "Grocery", "Gas", "Restaurant", "Tution", "Entertainment", "Shopping"]
-json_string = client.process_document("receipt_image0.jpg", categories)
+json_string = client.process_document("chipotle.jpg", categories)
+#obj = json.loads(json_string)
 
 #create a JSON file and write it to the file 
 with open('json_data.json', 'w') as outfile:
-  json.dump(json_string, outfile)
+  json_formatted_str = json.dumps(json_string, indent=4)
+  #json.dump(json_string, outfile)
+  outfile.write(json_formatted_str)
