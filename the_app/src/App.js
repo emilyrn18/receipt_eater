@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import firebase from "./firebase";
+
 import "./index.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {
@@ -10,6 +12,9 @@ import {
   Receipt_Capture,
   Finance_Bot,
 } from "./components";
+
+const ref = firebase.firestore().collection("clients");
+
 function App(){
   return(
     <div className="App">
