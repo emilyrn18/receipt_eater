@@ -1,0 +1,2 @@
+# receipt_eater
+Our inspiration for this app is, a lot of people struggle with keeping track of receipts and managing their finances. Better finance will lead to better financial decisions.  This app will take in an image of a receipt and record necessary information such as the company the user bought something from, the item(s) they purchased, and the break down of the cost. It will then organize this spending based on type of purchase and the date it was purchased. We also hope to add a feature for users to ask questions about credit scores, loans, and tax information.
