@@ -46,14 +46,3 @@ function User_Profile() {
 }
 
 export default User_Profile;
-
-function Card(props){
-  return(
-    <div className = "card">
-      <div className="card__body">
-        <img src={props.img}></img>
-        <h2 className = "card__title"></h2>
-      </div>
-    </div>
-  )
-}
