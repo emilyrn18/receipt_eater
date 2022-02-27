@@ -1,5 +1,6 @@
 import React, { Component, useState, useEffect } from "react";
-import Button from 'react-bootstrap/Button';
+import {Button, Modal} from 'react-bootstrap';
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 function simulateNetworkRequest() {
   return new Promise((resolve) => setTimeout(resolve, 2000));
@@ -24,14 +25,34 @@ function LoadingButton() {
       disabled={isLoading}
       onClick={!isLoading ? handleClick : null}
     >
-      {isLoading ? 'Loading…' : 'Click to load'}
+      {isLoading ? 'Loading…' : 'Click to Capture Receipt'}
     </Button>
   );
 }
 
 
+
 function Receipt_Capture() {
   
+  // const [currentTime, setCurrentTime] = useState(0);
+
+  // useEffect(() => {
+  //   fetch('http://localhost:5000/time', 
+  //   {
+  //     method: 'GET', 
+  //     mode: 'no-cors',
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     }
+  //   })
+  //   .then(res => res.json())
+  //   .then(data => {
+  //     setCurrentTime(data.time);
+  //   });
+  // }, []);
+
+  // console.log(currentTime)
+
   return (
     <div className="Receipt_Capture">
       <div class="container">

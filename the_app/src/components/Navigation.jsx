@@ -1,10 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import styles from './styles.css';
 
 function Navigation() {
   return (
     <div className="navigation">
-      <nav className="navbar navbar-expand navbar-dark bg-dark">
+      <nav className="navbar navbar-expand navbar-dark bg-primary">
         <div className="container">
           <NavLink className="navbar-brand" to="/">
             Receipt Eater Web App
@@ -25,11 +26,6 @@ function Navigation() {
               <li className="nav-item">
                 <NavLink className="nav-link" to="/Receipt_Capture">
                   Receipt Capture
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/Finance_Bot">
-                  Finance Bot
                 </NavLink>
               </li>
             </ul>
