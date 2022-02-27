@@ -1,6 +1,14 @@
-import React from "react";
+import React, {useEffect} from "react";
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import img1 from './chipotle.JPG';
+import Card from "./Card";
 
 function User_Profile() {
+  useEffect(()=>{
+    Aos.init();
+  }, [])
   return (
     <div className="User_Profile">
       <div class="container">
@@ -15,6 +23,24 @@ function User_Profile() {
           </div>
         </div>
       </div>
+      <section className="py-4 py-lg-5 container">
+        <div className="row">
+          <Card aos="fade-up" aos_offset="100" img={img1} title="Chipotle" desc="Restaurant food purchase. Total Purchase 10.68. Click here for more information."/>
+          <Card aos="fade-up" aos_offset="100" img={img1} title="Chipotle" desc="Restaurant food purchase. Total Purchase 10.68. Click here for more information."/>
+          <Card aos="fade-up" aos_offset="100" img={img1} title="Chipotle" desc="Restaurant food purchase. Total Purchase 10.68. Click here for more information."/>
+          <Card aos="fade-up" aos_offset="100" img={img1} title="Chipotle" desc="Restaurant food purchase. Total Purchase 10.68. Click here for more information."/>
+          <Card aos="fade-up" aos_offset="100" img={img1} title="Chipotle" desc="Restaurant food purchase. Total Purchase 10.68. Click here for more information."/>
+          <Card aos="fade-up" aos_offset="100" img={img1} title="Chipotle" desc="Restaurant food purchase. Total Purchase 10.68. Click here for more information."/>
+          <Card aos="fade-up" aos_offset="100" img={img1} title="Chipotle" desc="Restaurant food purchase. Total Purchase 10.68. Click here for more information."/>
+          <Card aos="fade-up" aos_offset="100" img={img1} title="Chipotle" desc="Restaurant food purchase. Total Purchase 10.68. Click here for more information."/>
+          <Card aos="fade-up" aos_offset="100" img={img1} title="Chipotle" desc="Restaurant food purchase. Total Purchase 10.68. Click here for more information."/>
+          <Card aos="fade-up" aos_offset="100" img={img1} title="Chipotle" desc="Restaurant food purchase. Total Purchase 10.68. Click here for more information."/>
+          <Card aos="fade-up" aos_offset="100" img={img1} title="Chipotle" desc="Restaurant food purchase. Total Purchase 10.68. Click here for more information."/>
+          <Card aos="fade-up" aos_offset="100" img={img1} title="Chipotle" desc="Restaurant food purchase. Total Purchase 10.68. Click here for more information."/>
+          <Card aos="fade-up" aos_offset="100" img={img1} title="Chipotle" desc="Restaurant food purchase. Total Purchase 10.68. Click here for more information."/>
+
+        </div>
+      </section>
     </div>
   );
 }
