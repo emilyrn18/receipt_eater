@@ -51,7 +51,6 @@ function App(){
           <Route path="/" element={<Home />} />
           <Route path="/User_Profile" element={<User_Profile />}/>
           <Route path="/Receipt_Capture" element={<Receipt_Capture />} />
-          <Route path="/Finance_Bot" element={<Finance_Bot />}/>
         </Routes>
         <Footer />
       </Router>
