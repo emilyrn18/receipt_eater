@@ -1,0 +1,58 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "services",
+      "patterns": [
+        "What services do you provide?",
+        "What can you help me with?"
+      ],
+      "responses": [
+        "We provide loan estimates",
+        "We calculate your max loan ammount"
+      ]
+    },
+    {
+      "tag": "hacks",
+      "patterns": [
+        "Tell me a financial hack",
+        "Tell me finacial advice",
+        "How can I improve my finances"
+      ],
+      "responses": [
+        "Get Paid What You're Worth and Spend Less Than You Earn",
+        "Which loan should you pay off first? A: The one with the highest interest rate"
+      ]
+    }
+  ]
+}
